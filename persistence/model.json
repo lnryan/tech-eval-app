@@ -1,0 +1,25 @@
+{
+  "databases":[
+    {
+      "name":"evaluations",
+      "model":{
+        "vertices":[
+          { "name":"V", "exists":true, "fields":[
+            { "name":"name", "type":"string" }
+          ] },
+          { "name":"process-part", parent:"V", "abstract":true },
+          { "name":"topic", "parent":"process-part", "abstract":true },
+          { "name":"phase", "parent":"process-part", "abstract":true },
+          { "name":"cycle", "parent":"process-part", "abstract":true },
+          { "name":"phase-1", "parent":"phase" },
+          { "name":"phase-2", "parent":"phase" },
+          { "name":"phase-3", "parent":"phase" },
+          { "name":"relevance", "parent":"cycle" },
+          { "name":"rigor", "parent":"cycle" },
+          { "name":"design","parent":"cycle" },
+          { "name":"evaluation-data", "parent":"V", abstract:"true" }
+        ]
+      }
+    }
+  ]
+}
