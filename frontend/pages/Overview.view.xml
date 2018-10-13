@@ -1,0 +1,16 @@
+<mvc:View
+        controllerName="evaluations.ui.pages.Home"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc">
+    <Page title="{i18n>homePageTitle}">
+        <headerContent>
+            <Button
+                    icon="sap-icon://hello-world"
+                    press="onOpenDialog"/>
+        </headerContent>
+        <content>
+            <mvc:XMLView viewName="evaluations.ui.pieces.Hello"/>
+            <mvc:XMLView viewName="evaluations.ui.pieces.InvoiceList"/>
+        </content>
+    </Page>
+</mvc:View>

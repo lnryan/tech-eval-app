@@ -1,0 +1,26 @@
+<mvc:View
+        controllerName="evaluations.ui.pieces.HelloPanel"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc">
+    <Panel headerText="{i18n>appDescription}">
+        <Button
+                id="helloDialogButton"
+                text="{i18n>helloButtonText}+"
+                press="onOpenDialog"
+                class="sapUiSmallMarginEnd"/>
+
+        <Button
+                text="{i18n>helloButtonText}"
+                press="onShowHello"
+                class="myCustomButton"
+        />
+        <Input
+                value="{/recipient/name}"
+                valueLiveUpdate="true"
+                width="60%"/>
+        <FormattedText
+                htmlText="Hello {/recipient/name}"
+                class ="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
+        />
+    </Panel>
+</mvc:View>

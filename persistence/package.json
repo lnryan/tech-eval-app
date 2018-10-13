@@ -1,0 +1,28 @@
+{
+  "name": "tech-eval-data",
+  "version": "0.0.1",
+  "description": "assets for setup of the application's data-model",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnryan/tech-eval-app.git"
+  },
+  "author": "lindsay ryan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lnryan/tech-eval-app/issues"
+  },
+  "homepage": "https://github.com/lnryan/tech-eval-app#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "orientjs": "^3.0.0"
+  }
+}

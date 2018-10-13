@@ -1,0 +1,10 @@
+{
+  "name":"New Evaluation",
+  "type":"Technology",
+  "sponsor":"Your man Johnny",
+  "phases":[
+    { "phase":1 },
+    { "phase":2 },
+    { "phase":3 }
+  ]
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- adding data-sap-ui-language="de" would harcode the language -->
+        <script id="sap-ui-bootstrap"
+                type="text/javascript"
+                src="https://openui5.hana.ondemand.com/1.56.11/resources/sap-ui-core.js"
+                data-sap-ui-theme="sap_belize"
+                data-sap-ui-libs="sap.m"
+                data-sap-ui-compatVersion="edge"
+                data-sap-ui-preload="async"
+                data-sap-ui-resourceroots='{
+                    "evaluations.ui": "./"
+                }'
+        ></script>
+        <script type="text/javascript">
+            sap.ui.getCore().attachInit(function () {
+                sap.ui.getCore().attachInit(function () {
+                    new sap.m.Shell({
+                        app : new sap.ui.core.ComponentContainer({
+                            name : "evaluations.ui",
+                            settings : {
+                                id : "ui"
+                            }
+                        })
+                    }).placeAt("content");
+                });
+                /*
+                // create a mobile app and display page1 initially
+                var app = new sap.m.App("myApp", {
+                    initialPage: "page1"
+                });
+                // create the first page
+                var page1 = new sap.m.Page("page1", {
+                    title : "Hello World",
+                    showNavButton : false,
+                    content : new sap.m.Button({
+                        text : "Go to Page 2",
+                        press : function () {
+                            // navigate to page2
+                            app.to("page2");
+                        }
+                    })
+                });
+                // create the second page with a back button
+                var page2 = new sap.m.Page("page2", {
+                    title : "Hello Page 2",
+                    showNavButton : true,
+                    navButtonPress : function () {
+                        // go back to the previous page
+                        app.back();
+                    }
+                });
+                // add both pages to the app
+                app.addPage(page1).addPage(page2);
+                // place the app into the HTML document
+                app.placeAt("content");
+                */
+            });
+        </script>
+    </head>
+    <body class="sapUiBody" id="content">
+    </body>
+</html>

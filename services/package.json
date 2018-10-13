@@ -1,0 +1,34 @@
+{
+  "name": "evaluation-svc",
+  "version": "0.0.1",
+  "description": "services for reading and modifying evaluation data",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js",
+    "stop": "killall -SIGINT evaluation-svc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lnryan/tech-eval-app.git"
+  },
+  "author": "lindsay ryan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lnryan/tech-eval-app/issues"
+  },
+  "homepage": "https://github.com/lnryan/tech-eval-app#readme",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "proxyquire": "^2.1.0",
+    "sinon": "^6.3.5"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "orientjs": "^3.0.0"
+  }
+}
